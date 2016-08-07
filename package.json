@@ -1,0 +1,55 @@
+{
+  "name": "angularmaterialdemo",
+  "version": "1.0.0",
+  "description": "angular 1 material design demo project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "inject": "gulp inject"
+  },
+  "author": "superman90",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "browser-sync": "^2.14.0",
+    "browser-sync-spa": "^1.0.3",
+    "eslint-config-xo-space": "^0.14.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-hub": "frankwallis/gulp-hub#d461b9c700df9010d0a8694e4af1fb96d9f38bf4",
+    "gulp-inject": "^4.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "wiredep": "^4.0.0"
+  },
+  "eslintConfig": {
+    "globals": {
+      "expect": true,
+      "angular": true
+    },
+    "root": true,
+    "env": {
+      "browser": true,
+      "jasmine": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ]
+//    "rules": {
+//      "no-undef": 0,
+//      "no-unused-vars": 0,
+//      "indent": ["error", 4],
+//      "space-before-function-paren": 0,
+//      "no-multi-spaces":0,
+//      "no-alert":0,
+//      "quotes":0,
+//      "one-var":0
+//
+//    }
+  }
+}
