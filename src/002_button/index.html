@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body ng-app="app" ng-cloak>
+    <md-button> Default Button </md-button>
+    <md-button class="btn1"> Accept </md-button>
+    <md-button class="md-raised">Button</md-button>
+    <md-button class="md-raised md-cornered">Button</md-button>
+    <md-button class="md-fab" aria-label="Eat cake">
+        <md-icon md-svg-src="img/icons/cake.svg"></md-icon>
+    </md-button>
+    <md-button class="md-fab md-mini" aria-label="Eat cake">
+        <md-icon md-svg-src="img/icons/cake.svg"></md-icon>
+    </md-button>
+    <md-button class="md-icon-button md-primary" aria-label="Settings">
+        <md-icon>
+            <i class="large material-icons">view_headline</i>
+        </md-icon>
+    </md-button>
+    <md-button>
+        <md-icon ng-style="{color: 'green'}">
+            <i class="large material-icons">assessment</i>
+        </md-icon>
+    </md-button>
+
+    <section layout="row" layout-align="center center">
+        <md-button class="groupX left">Apple</md-button>
+        <md-button class="groupX middle">Samsung</md-button>
+        <md-button class="groupX middle">Sony</md-button>
+        <md-button class="groupX right">B&amp;O</md-button>
+    </section>
+
+</body>
+
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+
+
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+
+</html>

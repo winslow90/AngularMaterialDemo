@@ -27,11 +27,11 @@ function reloadBrowserSync(cb) {
 
 function watch(done) {
     gulp.watch([
-        conf.path.src('index.html'),
+        conf.path.src('**/index.html'),
         'bower.json'
     ], gulp.parallel('inject'));
 
-    gulp.watch(conf.path.src('**/index.html'), reloadBrowserSync);
+    gulp.watch(conf.path.tmp('**/index.html'), reloadBrowserSync);
     gulp.watch([
         conf.path.src('**/*.scss'),
         conf.path.src('**/*.css')
