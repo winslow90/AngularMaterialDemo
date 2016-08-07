@@ -1,0 +1,24 @@
+/*
+md-checkbox {
+  margin: 8px;
+  cursor: pointer;
+  padding-left: 18px;
+  padding-right: 0;
+  line-height: 26px;
+  min-width: 18px;
+  min-height: 18px;
+}
+*/
+
+md-checkbox.md-checked.green .md-icon {
+  background-color: rgba(0, 255, 0, 0.87);
+}
+
+md-checkbox.md-checked[disabled].red .md-icon {
+  background-color: rgba(255, 0, 0, 0.26);
+}
+
+md-checkbox.dotted .md-icon {
+  border-width: 1px;
+  border-style: dashed;
+}
