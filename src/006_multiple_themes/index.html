@@ -25,6 +25,22 @@
     <md-button class="md-warn md-hue-1">Click me</md-button>
     <md-button class="md-warn md-hue-2">Click me</md-button>
     <md-button class="md-warn md-hue-3">Click me</md-button>
+
+    <div>
+        <md-button class="md-primary">I will be blue (by default)</md-button>
+        <div md-theme="altTheme">
+            <md-button class="md-primary">I will be purple (altTheme)</md-button>
+        </div>
+    </div>
+
+    <div>
+        <md-button ng-click="dynamicTheme = 'default'">Default</md-button>
+        <md-button ng-click="dynamicTheme = 'altTheme'">altTheme</md-button>
+        <div md-theme="{{ dynamicTheme }}" md-theme-watch>
+            <md-button class="md-primary">I'm dynamic</md-button>
+        </div>
+    </div>
+
 </body>
 
     <!-- bower:js -->

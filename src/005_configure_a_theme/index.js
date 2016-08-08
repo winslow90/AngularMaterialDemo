@@ -6,9 +6,9 @@ angular.module('app', ['ngMaterial'])
 
         //You can specify a color palette for a given color intention by calling the appropriate configuration method
         // (theme.primaryPalette, theme.accentPalette, theme.warnPalette, theme.backgroundPalette).
-        //$mdThemingProvider.theme('default')
-        //    .primaryPalette('pink')
-        //    .accentPalette('orange');
+        $mdThemingProvider.theme('default')
+            .primaryPalette('pink')
+            .accentPalette('orange');
 
         //You can mark a theme as dark by calling theme.dark().
         //$mdThemingProvider.theme('default')
@@ -62,13 +62,13 @@ angular.module('app', ['ngMaterial'])
 
         //Sometimes it is easier to extend an existing color palette to change a few properties than to define
         // a whole new palette. You can use $mdThemingProvider.extendPalette to quickly extend an existing color palette.
-        var neonRedMap = $mdThemingProvider.extendPalette('red', {
-            '500': '#ff0000',
-            'contrastDefaultColor': 'dark'
-        });
-        // Register the new color palette map with the name <code>neonRed</code>
-        $mdThemingProvider.definePalette('neonRed', neonRedMap);
-        // Use that theme for the primary intentions
-        $mdThemingProvider.theme('default')
-            .primaryPalette('neonRed');
+        //var neonRedMap = $mdThemingProvider.extendPalette('red', {
+        //    '500': '#ff0000',
+        //    'contrastDefaultColor': 'dark'
+        //});
+        //// Register the new color palette map with the name <code>neonRed</code>
+        //$mdThemingProvider.definePalette('neonRed', neonRedMap);
+        //// Use that theme for the primary intentions
+        //$mdThemingProvider.theme('default')
+        //    .primaryPalette('neonRed');
     });
