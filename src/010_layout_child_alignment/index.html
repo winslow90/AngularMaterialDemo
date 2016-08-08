@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body ng-app="app" ng-cloak>
+    <!--layout-align	Sets default alignment unless overridden by another breakpoint.-->
+    <!--layout-align-xs	width < 600px-->
+    <!--layout-align-gt-xs	width >= 600px-->
+    <!--layout-align-sm	600px <= width < 960px-->
+    <!--layout-align-gt-sm	width >= 960px-->
+    <!--layout-align-md	960px <= width < 1280px-->
+    <!--layout-align-gt-md	width >= 1280px-->
+    <!--layout-align-lg	1280px <= width < 1920px-->
+    <!--layout-align-gt-lg	width >= 1920px-->
+    <!--layout-align-xl	width >= 1920px-->
+
+    <div layout="column" layout-align="space-around stretch">
+        <div layout="column" layout-align="center center">one</div>
+        <div layout="column" layout-align="center center">two</div>
+        <div layout="column" layout-align="center center">three</div>
+    </div>
+
+    <div layout="row">
+        layout: row, column
+    </div>
+    <div layout="row">
+        horizontal: none, start, center, end, space-around, space-between
+    </div>
+    <div layout="row">
+        vertical:   none, start, cneter, end, stretch
+    </div>
+
+
+</body>
+
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+
+
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+
+</html>

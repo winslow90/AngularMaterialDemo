@@ -1,0 +1,20 @@
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+$bg: #4d57e5;
+$inc:#000010;
+div {
+  div {
+    &:nth-child(3n-1) {
+      background-color: lighten($bg,20%);
+    }
+    &:nth-child(3n-2) {
+      background-color: lighten($bg,10%);
+    }
+    &:nth-child(3n-3) {
+      background-color: lighten($bg,0%);
+    }
+  }
+}
