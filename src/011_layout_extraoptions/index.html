@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body ng-app="app" ng-cloak>
+
+    <div class="main" layout="column">
+        <div layout="row" layout-sm="column">
+            <div flex>
+                I'm above on mobile, and to the left on larger devices.
+            </div>
+            <div flex>
+                I'm below on mobile, and to the right on larger devices.
+            </div>
+        </div>
+
+            <!--layout-margin adds margin around each flex child. It also adds a margin to the layout container itself.-->
+            <!--layout-padding adds padding inside each flex child. It also adds padding to the layout container itself.-->
+            <!--layout-fill forces the layout element to fill its parent container.-->
+        <div layout="row" layout-margin>
+            <div flex>Parent layout and this element have margins.</div>
+        </div>
+        <div layout="row" layout-padding>
+            <div flex>Parent layout and this element have padding.</div>
+        </div>
+        <div layout="row" layout-fill style="min-height: 25px;">
+            <div flex>Parent layout is set to fill available space.</div>
+        </div>
+        <div layout="row" layout-padding layout-margin layout-fill style="min-height: 24px;">
+            <div flex>I am using all three at once.</div>
+        </div>
+
+        <hr/>
+
+        layout-wrap allows flex children to wrap within the container if the elements use more than 100%.
+
+        <hr/>
+
+        <div layout="row" layout-wrap>
+            <div flex="33">[flex=33]</div>
+            <div flex="66">[flex=66]</div>
+            <div flex="66">[flex=66]</div>
+            <div flex="33">[flex=33]</div>
+            <div flex="33">[flex=33]</div>
+            <div flex="33">[flex=33]</div>
+            <div flex="33">[flex=33]</div>
+        </div>
+
+        <hr/>
+
+        <div layout="row">
+            <div flex="33">[flex=33]</div>
+            <div flex="66">[flex=66]</div>
+            <div flex="66">[flex=66]</div>
+            <div flex="33">[flex=33]</div>
+            <div flex="33">[flex=33]</div>
+            <div flex="33">[flex=33]</div>
+            <div flex="33">[flex=33]</div>
+        </div>
+
+
+        <hr/>
+            <pre>
+                hide-xs	show-xs	width < 600px
+                hide-gt-xs	show-gt-xs	width >= 600px
+                hide-sm	show-sm	600px <= width < 960px
+                hide-gt-sm	show-gt-sm	width >= 960px
+                hide-md	show-md	960px <= width < 1280px
+                hide-gt-md	show-gt-md	width >= 1280px
+                hide-lg	show-lg	1280px <= width < 1920px
+                hide-gt-lg	show-gt-lg	width >= 1920px
+                hide-xl	show-xl	width >= 1920px
+            </pre>
+        <hr/>
+
+        <div layout="row">
+            <div hide show-gt-sm flex>
+                Only show on gt-sm devices.
+            </div>
+            <div hide-gt-sm flex>
+                Shown on small and medium.<br>
+                Hidden on gt-sm devices.
+            </div>
+            <div show hide-gt-md flex>
+                Shown on small and medium size devices.<br>
+                Hidden on gt-md devices.
+            </div>
+            <div hide show-md flex>
+                Shown on medium size devices only.
+            </div>
+            <div hide show-gt-lg flex>
+                Shown on devices larger than 1200px wide only.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+
+
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+
+</html>
