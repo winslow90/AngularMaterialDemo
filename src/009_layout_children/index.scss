@@ -3,3 +3,22 @@ div {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+$bg1: #4d57e5;
+$bg2: #e54e4e;
+$bg3: #6de563;
+
+  div {
+    background-color: gray;
+    div {
+      &:nth-child(3n-1) {
+        background-color: lighten($bg1,10%);
+      }
+      &:nth-child(3n-2) {
+        background-color: lighten($bg2,10%);
+      }
+      &:nth-child(3n-3) {
+        background-color: lighten($bg3,10%);
+      }
+    }
+  }
+

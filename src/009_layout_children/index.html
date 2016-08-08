@@ -12,6 +12,8 @@
 </head>
 <body ng-app="app" ng-cloak>
 
+    <hr/>
+
     <div layout="row">
         <div flex="20">
             [flex="20"]
@@ -24,9 +26,11 @@
         </div>
     </div>
 
+    <hr/>
+
     <!--flex to set the grow or shrink size-->
     <div class="demo-content ">
-        <div layout="row" layout-wrap="" class="layout-wrap ng-scope layout-row">
+        <div layout="row" layout-wrap>
             <div flex="30" class="flex-30">
                 [flex="30"]
             </div>
@@ -51,8 +55,10 @@
         </div>
     </div>
 
+    <hr/>
+
     <div class="demo-content ">
-        <div layout="row" layout-wrap="" class="layout-wrap ng-scope layout-row">
+        <div layout="row" layout-wrap>
             <div flex="30">
                 [flex="30"]
             </div>
@@ -77,8 +83,10 @@
         </div>
     </div>
 
+    <hr/>
+
     <div class="demo-content ">
-        <div layout="row" layout-wrap="" class="layout-wrap ng-scope layout-row">
+        <div layout="row" layout-wrap>
             <div class="flex-30">
                 [flex="30"]
             </div>
@@ -103,6 +111,8 @@
         </div>
     </div>
 
+    <hr/>
+
     <div layout="row">
         <div flex-gt-sm="66" flex="33">
             flex 33% on mobile, <br>and 66% on gt-sm devices.
@@ -119,6 +129,12 @@
     <!--flex="grow"	Will grow and shrink as needed. Starts with a size of 100%. Same as flex="100".-->
     <!--flex="nogrow"	Will shrink as needed, but won't grow. Starts with a size based on its width and height values.-->
     <!--flex="noshrink"	Will grow as needed, but won't shrink. Starts with a size based on its width and height values.-->
+
+    <hr/>
+    <pre>
+        flex='0' cannot be seen
+    </pre>
+    <hr/>
 
     <div layout="row" layout-wrap>
         <div flex="none">
@@ -147,6 +163,7 @@
         </div>
     </div>
 
+    <hr/>
     <!--row order-->
     <div layout="row">
         <div flex flex-order="-1">
@@ -165,6 +182,7 @@
         </div>
     </div>
 
+    <hr/>
     <!--offset-->
     <div layout="row">
         <div flex="66" flex-offset="15">
