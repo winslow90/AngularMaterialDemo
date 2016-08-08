@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body ng-app="app" ng-cloak>
+
     <div layout="row">
         <div flex="20">
             [flex="20"]
@@ -23,6 +24,7 @@
         </div>
     </div>
 
+    <!--flex to set the grow or shrink size-->
     <div class="demo-content ">
         <div layout="row" layout-wrap="" class="layout-wrap ng-scope layout-row">
             <div flex="30" class="flex-30">
@@ -145,6 +147,7 @@
         </div>
     </div>
 
+    <!--row order-->
     <div layout="row">
         <div flex flex-order="-1">
             <p>[flex-order="-1"]</p>
@@ -159,6 +162,17 @@
         <div flex flex-order="3" flex-order-gt-xs="1">
             <p hide-gt-md>[flex-order="3"]</p>
             <p hide show-gt-md>[flex-order-gt-md="1"]</p>
+        </div>
+    </div>
+
+    <!--offset-->
+    <div layout="row">
+        <div flex="66" flex-offset="15">
+            [flex-offset="15"]
+            [flex="66"]
+        </div>
+        <div flex>
+            [flex]
         </div>
     </div>
 
