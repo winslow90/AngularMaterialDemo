@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body ng-app="app" ng-cloak>
+    <div layout="row">
+        <div flex="20">
+            [flex="20"]
+        </div>
+        <div flex="70">
+            [flex="70"]
+        </div>
+        <div flex hide-sm hide-xs>
+            [flex]
+        </div>
+    </div>
+
+    <div class="demo-content ">
+        <div layout="row" layout-wrap="" class="layout-wrap ng-scope layout-row">
+            <div flex="30" class="flex-30">
+                [flex="30"]
+            </div>
+            <div flex="45" class="flex-45">
+                [flex="45"]
+            </div>
+            <div flex="25" class="flex-25">
+                [flex="25"]
+            </div>
+            <div flex="33" class="flex-33">
+                [flex="33"]
+            </div>
+            <div flex="66" class="flex-66">
+                [flex="66"]
+            </div>
+            <div flex="50" class="flex-50">
+                [flex="50"]
+            </div>
+            <div flex="" class="flex">
+                [flex]
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-content ">
+        <div layout="row" layout-wrap="" class="layout-wrap ng-scope layout-row">
+            <div flex="30">
+                [flex="30"]
+            </div>
+            <div flex="45">
+                [flex="45"]
+            </div>
+            <div flex="25">
+                [flex="25"]
+            </div>
+            <div flex="33">
+                [flex="33"]
+            </div>
+            <div flex="66">
+                [flex="66"]
+            </div>
+            <div flex="50">
+                [flex="50"]
+            </div>
+            <div flex="">
+                [flex]
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-content ">
+        <div layout="row" layout-wrap="" class="layout-wrap ng-scope layout-row">
+            <div class="flex-30">
+                [flex="30"]
+            </div>
+            <div class="flex-45">
+                [flex="45"]
+            </div>
+            <div class="flex-25">
+                [flex="25"]
+            </div>
+            <div class="flex-33">
+                [flex="33"]
+            </div>
+            <div class="flex-66">
+                [flex="66"]
+            </div>
+            <div class="flex-50">
+                [flex="50"]
+            </div>
+            <div class="flex">
+                [flex]
+            </div>
+        </div>
+    </div>
+
+    <div layout="row">
+        <div flex-gt-sm="66" flex="33">
+            flex 33% on mobile, <br>and 66% on gt-sm devices.
+        </div>
+        <div flex-gt-sm="33" flex="66">
+            flex 66%  on mobile, <br>and 33% on gt-sm devices.
+        </div>
+    </div>
+
+    <!--flex	Will grow and shrink as needed. Starts with a size of 0%. Same as flex="0".-->
+    <!--flex="none"	Will not grow or shrink. Sized based on its width and height values.-->
+    <!--flex="initial"	Will shrink as needed. Starts with a size based on its width and height values.-->
+    <!--flex="auto"	Will grow and shrink as needed. Starts with a size based on its width and height values.-->
+    <!--flex="grow"	Will grow and shrink as needed. Starts with a size of 100%. Same as flex="100".-->
+    <!--flex="nogrow"	Will shrink as needed, but won't grow. Starts with a size based on its width and height values.-->
+    <!--flex="noshrink"	Will grow as needed, but won't shrink. Starts with a size based on its width and height values.-->
+
+    <div layout="row" layout-wrap>
+        <div flex="none">
+            [flex="none"]
+        </div>
+        <div flex>
+            [flex]
+        </div>
+        <div flex="nogrow">
+            [flex="nogrow"]
+        </div>
+        <div flex="grow">
+            [flex="grow"]
+        </div>
+        <div flex="initial">
+            [flex="initial"]
+        </div>
+        <div flex="auto">
+            [flex="auto"]
+        </div>
+        <div flex="noshrink">
+            [flex="noshrink"]
+        </div>
+        <div flex="0">
+            [flex="0"]
+        </div>
+    </div>
+
+    <div layout="row">
+        <div flex flex-order="-1">
+            <p>[flex-order="-1"]</p>
+        </div>
+        <div flex flex-order="1" flex-order-gt-xs="3">
+            <p hide-gt-md>[flex-order="1"]</p>
+            <p hide show-gt-md>[flex-order-gt-md="3"]</p>
+        </div>
+        <div flex flex-order="2">
+            <p>[flex-order="2"]</p>
+        </div>
+        <div flex flex-order="3" flex-order-gt-xs="1">
+            <p hide-gt-md>[flex-order="3"]</p>
+            <p hide show-gt-md>[flex-order-gt-md="1"]</p>
+        </div>
+    </div>
+
+</body>
+
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+
+
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+
+</html>

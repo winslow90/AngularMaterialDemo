@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body ng-app="app" ng-cloak>
+    <div layout="row">
+        <div layout="row">
+            <div flex>First item in row</div>
+            <div flex>Second item in row</div>
+        </div>
+        <div layout="column">
+            <div flex>First item in column</div>
+            <div flex>Second item in column</div>
+        </div>
+    </div>
+
+    <div layout="row" layout-xs="column">
+        <div flex>
+            I'm above on mobile, and to the left on larger devices.
+        </div>
+        <div flex>
+            I'm below on mobile, and to the right on larger devices.
+        </div>
+    </div>
+</body>
+
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+
+
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+
+</html>
