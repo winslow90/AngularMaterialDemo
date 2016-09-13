@@ -3,3 +3,9 @@ div {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+section{
+  position: relative;
+  left: 20%;
+  max-width: 60%;
+}

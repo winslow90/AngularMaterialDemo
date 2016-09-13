@@ -10,22 +10,18 @@
     <!-- endbower -->
     <link rel="stylesheet" href="index.css"/>
 </head>
-<body ng-app="app" ng-cloak>
+<body ng-app="demoApp" ng-cloak>
     <header>
         <hr/>
             <pre>
-                https://material.angularjs.org/latest/api/service/$mdBottomSheet
+                $mdPanel.newPanelPosition() cannot read the property!!!!!!!!!!!!
+
             </pre>
     </header>
 
-    <section class="mainsection">
-        <div ng-controller="MyController">
-            <md-button ng-click="openBottomSheet()">
-                Open a Bottom Sheet!
-            </md-button>
-        </div>
+    <section class="mainsection" ng-controller="MainCtl">
+        <md-button ng-click="showPanel($event)"> Default Button </md-button>
     </section>
-
 </body>
 
     <!-- bower:js -->

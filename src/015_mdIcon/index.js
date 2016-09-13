@@ -11,7 +11,7 @@ function SomeDirective($mdIcon) {
     $mdIcon('android').then(function(iconEl)    { element.append(iconEl); });
     $mdIcon('work:chair').then(function(iconEl) { element.append(iconEl); });
     // Load and cache the external SVG using a URL
-    $mdIcon('img/icons/android.svg').then(function(iconEl) {
+    $mdIcon('img/icons/icons.svg').then(function(iconEl) {
         element.append(iconEl);
     });
 };

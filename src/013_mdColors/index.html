@@ -11,15 +11,23 @@
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body ng-app="app" ng-cloak>
-    <hr/>
-    <pre>
-        https://material.angularjs.org/latest/api/service/$mdColors
-        didn't work out
-    </pre>
 
-    <div ng-controller="myCtrl as ctrl">
-        {{ctrl.color}}
-    </div>
+    <header>
+        <hr/>
+            <pre>
+                still not working
+                https://material.angularjs.org/latest/api/service/$mdColors
+            </pre>
+    </header>
+
+    <section class="mainsection">
+        <div ng-controller="myCtrl as ctrl">
+            {{ctrl.color}}
+        </div>
+
+        <span id="sometext">some text</span>
+    </section>
+
 
 </body>
 

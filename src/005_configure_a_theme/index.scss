@@ -3,3 +3,16 @@ div {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.mainsection {
+  max-width: 60%;
+  margin: auto;
+}
+
+@for $i from 1 to 4 {
+  .section#{$i} {
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+}

@@ -11,24 +11,33 @@
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body ng-app="app" ng-cloak>
-    <md-checkbox class="green">
-        Green Checkbox
-    </md-checkbox>
+    <header>
+        <hr/>
+            <pre>
 
-    <md-checkbox ng-disabled="true" class="red" ng-model="data.cb4" ng-init="data.cb4=true">
-        Checkbox: Disabled, Checked
-    </md-checkbox>
+            </pre>
+    </header>
 
-    <div>
-        <md-checkbox ng-model="data.cb2" aria-label="Checkbox 2" ng-true-value="'yup'" ng-false-value="'nope'">
-            Default Border
+    <section class="mainsection">
+        <md-checkbox class="green">
+            Green Checkbox
         </md-checkbox>
-    </div>
-    <div>
-        <md-checkbox ng-model="data.cb2" aria-label="Checkbox 2" ng-true-value="'yup'" class="dotted" ng-false-value="'nope'">
-            Custom Border
+
+        <md-checkbox ng-disabled="true" class="red" ng-model="data.cb4" ng-init="data.cb4=true">
+            Checkbox: Disabled, Checked
         </md-checkbox>
-    </div>
+
+        <div>
+            <md-checkbox ng-model="data.cb2" aria-label="Checkbox 2" ng-true-value="'yup'" ng-false-value="'nope'">
+                Default Border
+            </md-checkbox>
+        </div>
+        <div>
+            <md-checkbox ng-model="data.cb2" aria-label="Checkbox 2" ng-true-value="'yup'" class="dotted" ng-false-value="'nope'">
+                Custom Border
+            </md-checkbox>
+        </div>
+    </section>
 
 </body>
 
